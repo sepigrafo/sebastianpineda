@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastián Pineda Giraldo</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace a tu archivo de estilos CSS -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .logo {
+            float: left;
+            margin-left: 20px;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <h1>Sebastián Pineda Giraldo</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#servicios">Libros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Bienvenida -->
+    <section id="inicio">
+        <h2>Bienvenido a mi espacio web - aquí comparto ideas</h2>
+        <p>Este es mi rinconcito para escribir y botar las cenizas.</p>
+    </section>
+
+    <!-- Sección de Blog Destacado -->
+    <section id="blog">
+        <h2>Última entrada del Blog</h2>
+        <p>Destaca tu último artículo o reflexión destacada.</p>
+        <a href="blog.html">Explora más en el Blog</a>
+    </section>
+
+    <!-- Sección de Servicios y Contacto -->
+    <section id="servicios">
+        <h2>Servicios y Contacto</h2>
+        <p>Ofrezco una amplia gama de servicios que combinan diseño UI/UX, escritura creativa y académica, junto con formación en psicología.</p>
+        <p>Redacción UX: Desarrollo de texto claro y atractivo en interfaces para ayudar a los usuarios a cumplir objetivos específicos.</p>
+        <p>Microcopias y Taxonomía: Etiquetado y organización efectiva para una navegación intuitiva.</p>
+        <p>Chatbots Amigables: Implementación de sistemas de conversación para una experiencia interactiva.</p>
+        <p>Investigación de Usuarios: Análisis profundo para entender las necesidades y comportamientos de los usuarios.</p>
+        <p>Guía de Estilo de Contenido: Establecimiento de principios para mantener coherencia y voz de marca.</p>
+        <p>Pruebas de Usuario y Diseño: Evaluación y refinamiento continuo a través de pruebas directas.</p>
+        <p>Principios de Diseño Centrados en el Usuario: Aplicación de enfoques centrados en el usuario para mejorar la accesibilidad y la estética.</p>
+        <p>Prototipado Interactivo: Creación de modelos visuales para validar conceptos de diseño y funcionalidad.</p>
+        <form action="enviar.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+        <p>Para más información, contáctame a través de admin@sebastianpineda.com. También puedes seguirme en mis redes sociales.</p>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <p>Derechos de Autor &copy; 2024 - Hecho con 🖤 Sebastián Pineda Giraldo</p>
+    </footer>
+
+</body>
+</html>
