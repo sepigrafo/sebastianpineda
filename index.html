@@ -1,124 +1,125 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sebastián Pineda Giraldo</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Enlace a tu archivo de estilos CSS -->
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        .logo {
-            float: left;
-            margin-left: 20px;
-        }
-        h1 {
-            margin: 0;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-        }
-        section {
-            padding: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        footer p {
-            margin: 0;
-        }
-    </style>
+    <title>Mente Sabia - Página Principal</title>
+    <link rel="stylesheet" href="estilos.css"> <!-- Enlaza el archivo de estilos CSS -->
 </head>
 <body>
-
-    <!-- Encabezado -->
-    <header>
-        <div class="logo">
-            <h1>Sebastián Pineda Giraldo</h1>
+    <div class="navbar">
+        <a href="#">REPS</a>
+        <a href="#">DBT</a>
+        <a href="#">Mente Sabia</a>
+        <a href="#">Test</a>
+        <a href="#">Cuenta</a>
+    </div>
+    <div class="container">
+        <div class="left-section">
+            <div class="sub-section">
+                <h1 class="title">Mente<br>Sabia</h1>
+            </div>
+            <div class="sub-section">
+                <p class="subtitle">Regístrate para</p>
+            </div>
+            <div class="sub-section">
+                <button class="button">Jugar</button>
+            </div>
+            <div class="sub-section">
+                <p class="subtitle">Registrar con</p>
+            </div>
+            <div class="sub-section">
+                <button class="google-button">
+                    <img src="boton_google.png" alt="Google">
+                </button>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#servicios">Libros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="right-section">
+            <img src="img_cerebro_inicio.png" alt="Ilustración 1" class="illustration">
+            <img src="img_colibri_inicio.png" alt="Ilustración 2" class="illustration">
+        </div>
+    </div>
 
-    <!-- Sección de Bienvenida -->
-    <section id="inicio">
-        <h2>Bienvenido a mi espacio web - aquí comparto ideas</h2>
-        <p>Este es mi rinconcito para escribir y botar las cenizas.</p>
-    </section>
+    <!-- Segunda sección -->
+    <div class="container">
+        <div class="left-section-second">
+            <!-- Agrega aquí la imagen para la segunda sección -->
+            <img src="img_cerebro_flotante.png" alt="Imagen Segunda Sección" class="image-second">
+        </div>
+        <div class="right-section-second">
+            <div class="card">
+                <h2>¡Hola! 👋</h2>
+                <p> 
 
-    <!-- Sección de Blog Destacado -->
-    <section id="blog">
-        <h2>Última entrada del Blog</h2>
-        <p>Destaca tu último artículo o reflexión destacada.</p>
-        <a href="blog.html">Explora más en el Blog</a>
-    </section>
+                    Hoy te hablaremos sobre las Habilidades DBT. Son un conjunto de acciones organizadas en una serie de pasos que resultan efectivos para ayudarte a regular tus emociones. 🧰
+                    
+                    Estas habilidades están basadas en un tratamiento llamado DBT (Terapia Dialéctico Conductual).
+                    
+                    </p>
+            </div>
+        </div>
+    </div>
 
-    <!-- Sección de Servicios y Contacto -->
-    <section id="servicios">
-        <h2>Servicios y Contacto</h2>
-        <p>Ofrezco una amplia gama de servicios que combinan diseño UI/UX, escritura creativa y académica, junto con formación en psicología.</p>
-        <p>Redacción UX: Desarrollo de texto claro y atractivo en interfaces para ayudar a los usuarios a cumplir objetivos específicos.</p>
-        <p>Microcopias y Taxonomía: Etiquetado y organización efectiva para una navegación intuitiva.</p>
-        <p>Chatbots Amigables: Implementación de sistemas de conversación para una experiencia interactiva.</p>
-        <p>Investigación de Usuarios: Análisis profundo para entender las necesidades y comportamientos de los usuarios.</p>
-        <p>Guía de Estilo de Contenido: Establecimiento de principios para mantener coherencia y voz de marca.</p>
-        <p>Pruebas de Usuario y Diseño: Evaluación y refinamiento continuo a través de pruebas directas.</p>
-        <p>Principios de Diseño Centrados en el Usuario: Aplicación de enfoques centrados en el usuario para mejorar la accesibilidad y la estética.</p>
-        <p>Prototipado Interactivo: Creación de modelos visuales para validar conceptos de diseño y funcionalidad.</p>
-        <form action="enviar.php" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
-            <button type="submit">Enviar Mensaje</button>
-        </form>
-        <p>Para más información, contáctame a través de admin@sebastianpineda.com. También puedes seguirme en mis redes sociales.</p>
-    </section>
+    <!-- Sección 3 -->
+<div class="third-section">
+    <!-- Subsecciones horizontales -->
+    <div class="subsection">
+        <div class="card">
+            <h2>Regulación emocional</h2>
+            <p>¡Empecemos a explorar el sistema emocional! 😊
 
-    <!-- Pie de Página -->
-    <footer>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-        <p>Derechos de Autor &copy; 2024 - Hecho con 🖤 Sebastián Pineda Giraldo</p>
-    </footer>
+                Sabías que todas nuestras emociones son activadas en una parte del cerebro llamada "Sistema límbico"? 
+                
+                🧠 Este sistema se encuentra en el fondo medio del cerebro y tiene una apariencia de caracol. 🌀
+                Este lugar es como el motor que enciende todas nuestras emociones. ¡Sigue descubriendo cómo funciona! 🌟</p>
+        </div>
+    </div>
+    <div class="subsection">
+        <div class="card">
+            <h2>Dialectica</h2>
+            <p>¡Empecemos a explorar la dialéctica! 😊
+                La dialéctica es una forma de pensar que nos ayuda a encontrar el equilibrio entre dos ideas opuestas. En otras palabras, se trata de encontrar un punto medio que nos permita comprender mejor el mundo y nuestras emociones. En esta sección, aprenderás cómo la dialéctica puede ser una herramienta poderosa para mejorar tu vida. 🌟</p>
+        </div>
+    </div>
+    <div class="subsection">
+        <div class="card">
+            <h2>Teoría biosocial</h2>
+            <p>La vulnerabilidad biológica.
+
+                En la DBT, se aborda la "vulnerabilidad biológica". Se refiere a la predisposición genética a reacciones emocionales intensas. No es un defecto, sino una característica. La DBT enseña a manejar esta vulnerabilidad para regular las emociones. 🌟</p>
+        </div>
+    </div>
+</div>
+
+<!-- Tercera sección -->
+<div class="third-section">
+    <div class="left-subsection">
+        <img src="img_dbt_app_cel.png" alt="Imagen 1">
+        <!-- Agrega más imágenes si es necesario -->
+    </div>
+    <div class="right-subsection">
+        <div class="sub-section">
+            <h1 class="title">Mente Sabia</h1>
+        </div>
+        <div class="sub-section">
+            <p class="subtitle">Regístrate para</p>
+        </div>
+        <div class="sub-section">
+            <button class="button">Jugar</button>
+        </div>
+        <div class="sub-section">
+            <p class="subtitle">Registrar con</p>
+        </div>
+        <div class="sub-section">
+            <button class="google-button">
+                <img src="boton_google.png" alt="Google">
+            </button>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <p class="footer-text">Copyrigh 2024 © Creado por REPS con 💜</p>
+</footer>
 
 </body>
 </html>
